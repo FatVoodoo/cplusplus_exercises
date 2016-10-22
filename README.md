@@ -1,4 +1,4 @@
 
-### Repository for CS264 Labs - Gregory Kelleher 14478352
+### Repository for Sample C++ Exercises - Gregory Kelleher 
 
-This repository contains each weekly lab assignment allocated by Software Design (CS264)
+This repository contains some sample C++ exercises I've done
