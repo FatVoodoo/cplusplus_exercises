@@ -10,7 +10,10 @@ int main(void) {
     std::string name;
     getline(std::cin, name);
 
-    if(name == "end") { exit(0); };
+    if(name == "end") { 
+        std::cout << "The length of the linked list is: 0" << std::endl; 
+        exit(0);
+    };
 
     struct customer *head = create_list(name);
 
