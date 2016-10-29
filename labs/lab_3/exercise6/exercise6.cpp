@@ -6,17 +6,34 @@
 
 int main(void) {
 
-    customer customer1, customer2, customer3;
+    std::cout << "Enter the name for customer 1: " << std::endl;
+    std::string name;
+    getline(std::cin, name);
 
-    customer1.next = &customer2;
-    customer2.next = &customer3;
+    if(name == "end") { exit(0); };
 
-    customer3.next = NULL;
-    customer1.name = "Jack";
-    customer2.name = "Jane";
-    customer3.name = "Joe";
+    struct customer *head = create_list(name);
 
-    print_customers(customer1);
+    int customer_cnt = 2;
+
+    while(true) {
+
+        std::cout << "Enter the name for customer " << customer_cnt << ":" << std::endl;
+        getline(std::cin, name);
+
+        if(name != "end") {
+            insert_name(head, name);
+        } else break;
+
+        customer_cnt++;
+
+    } 
+    std::cout << std::endl;
+
+    print_customers(head);
+
+    int length = list_length(head);
+    std::cout << "The length of the linked list is: " << length << std::endl;
 
     return 0;
 }
