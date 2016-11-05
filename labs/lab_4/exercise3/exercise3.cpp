@@ -1,5 +1,5 @@
 
-// exercise2.cpp
+// exercise3.cpp
 
 #include "MyComplex.h"
 #include "MyComplex.cpp"
@@ -21,9 +21,9 @@ int main(void)
     std::cout << "x is: "; print(x);
     std::cout << "y is: "; print(y);
 
-    sum = x.Add(y);
-    difference = x.Subtract(y);
-    product = x.Multiply(y);
+    sum = x + y;
+    difference = x - y;
+    product = x * y;
 
     std::cout << "x + y is: "; print(sum); 
     std::cout << "x - y is: "; print(difference); 
