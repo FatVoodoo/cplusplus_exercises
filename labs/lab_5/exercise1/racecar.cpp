@@ -22,6 +22,7 @@ void Racecar::useParachute() {
 }
 
 void Racecar::print() const {
+    Car::print();
     std::cout << getName() << " also has " << gearbox 
         << " gears and is sponsored by " << sponsor << ". ";
 
